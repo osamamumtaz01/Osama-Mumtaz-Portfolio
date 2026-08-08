@@ -11,6 +11,7 @@ import {
   geoprompttracker,
   sssxdown,
   reelstomp4,
+  turboshieldvpn,
   mysql,
   figma,
   git,
@@ -335,6 +336,33 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+    name: "Turbo Shield VPN - Fast & Secure VPN",
+    category: "mobile",
+    description:
+      "An Android VPN client built around leak protection and transparency rather than a single connect button. Smart Connect picks the fastest server automatically, while the full server list shows real-time load and latency per location and can be filtered for OTT streaming, gaming or standard use. The settings expose the controls that actually keep a tunnel honest — a kill switch that holds the tunnel open while reconnecting, IPv6 blocking so traffic can't route around an IPv4-only tunnel, privacy-focused Cloudflare DNS, Android-level always-on VPN, split tunnelling and connect-on-launch. A live stats screen graphs throughput, latency, VPN IP and protocol as you browse, and every session ends with a recap of time connected, bandwidth used and whether any leaks occurred.",
+    tags: [
+      {
+        name: "android",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "vpn",
+        color: "green-text-gradient",
+      },
+      {
+        name: "openvpn",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "privacy",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: turboshieldvpn,
+    source_code_link:
+      "https://play.google.com/store/apps/details?id=com.turboshieldvpn.fastsecure.vpn",
+  },
   {
     name: "ReelstoMP4 - Facebook Reels & Video Downloader",
     category: "web",

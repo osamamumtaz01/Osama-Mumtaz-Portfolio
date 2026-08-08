@@ -14,6 +14,7 @@ import snaplingo from "./snaplingo.webp";
 import geoprompttracker from "./geoprompttracker.webp";
 import sssxdown from "./sssxdown.webp";
 import reelstomp4 from "./reelstomp4.webp";
+import turboshieldvpn from "./turboshieldvpn.webp";
 import mysql from "./tech/mysql.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
@@ -47,6 +48,7 @@ export {
   geoprompttracker,
   sssxdown,
   reelstomp4,
+  turboshieldvpn,
   mysql,
   firstTestimonial,
   secondTestimonial,
