@@ -1,42 +1,28 @@
 
 import {
-  logo,
   backend,
   creator,
   mobile,
   web,
-  github,
-  menu,
-  close,
   css,
   wallpaper,
   snaplingo,
   pdf_scanner,
   geoprompttracker,
+  sssxdown,
+  reelstomp4,
   mysql,
-  express,
-  aws,
-  mui,
-  gsap,
-  framer,
   figma,
   git,
   html,
   javascript,
   mongodb,
-  nodejs,
-  reactjs,
-  redux,
-  tailwind,
-  threejs,
   kotlin,
   java,
   python,
   firebase,
   django,
   androidstudio,
-  pycharm,
-  typescript,
   postgresql,
   docker,
   firstTestimonial,
@@ -350,6 +336,81 @@ const testimonials = [
 
 const projects = [
   {
+    name: "ReelstoMP4 - Facebook Reels & Video Downloader",
+    description:
+      "A free web tool that turns a Facebook link into an MP4 — paste the URL of a public reel or video and save it in HD straight to a phone or PC, with no app to install, no signup and no data stored. It works with both facebook.com and fb.watch links, places no cap on downloads, and ships light and dark themes plus multi-language support alongside Features, How-to and FAQ pages.",
+    tags: [
+      {
+        name: "web-app",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "facebook",
+        color: "green-text-gradient",
+      },
+      {
+        name: "video-downloader",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "no-signup",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: reelstomp4,
+    source_code_link: "https://reelstomp4.com/",
+  },
+  {
+    name: "GeoPromptTracker - GEO Toolkit for AI Search",
+    description:
+      "A free toolkit for Generative Engine Optimization — making sure ChatGPT, Claude, Perplexity and Google AI Overviews can find, read and cite your site. It bundles 19 no-sign-up tools, including an llms.txt generator, a FAQPage JSON-LD schema generator, and an AI-Readiness Audit that scores any URL against the technical signals that matter for AI visibility, in the spirit of a Lighthouse report but scoped to GEO/AEO. Alongside the tools sits a maintained directory of 28 AI crawlers explaining what each bot does, whether it actually respects robots.txt, and the copy-paste rules to allow or block it — plus 38 long-form guides.",
+    tags: [
+      {
+        name: "GEO",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "AI Search",
+        color: "green-text-gradient",
+      },
+      {
+        name: "llms.txt",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "JSON-LD",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: geoprompttracker,
+    source_code_link: "https://geoprompttracker.com/",
+  },
+  {
+    name: "sssxdown - X (Twitter) Video Downloader",
+    description:
+      "A free web tool for saving public videos and GIFs from X (formerly Twitter) — paste a post link and download in a couple of clicks, with no login, no watermark and nothing stored server-side. It handles several links at once, ships a light and dark theme, and is localised into multiple languages. Supporting pages cover how-to steps, an FAQ, release notes and a privacy policy, and the whole tool stays free through a single unobtrusive ad placement.",
+    tags: [
+      {
+        name: "web-app",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "video-downloader",
+        color: "green-text-gradient",
+      },
+      {
+        name: "i18n",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "no-login",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: sssxdown,
+    source_code_link: "https://sssxdown.com/",
+  },
+  {
     name: "SnapLingo - AI-Powered Language Learning App",
     description:
       "SnapLingo is an intelligent, cross-platform language learning application developed in Compose Multiplatform designed specifically for children. It delivers a highly personalized educational experience through dynamic AI-generated lessons and an interactive AI chat tutor. To keep learners engaged, the app integrates rich gamification features including XP points, daily streaks, and achievement badges. It also features a comprehensive family management system, allowing parents to track multiple children's progress, alongside a seamless subscription model for premium content.",
@@ -410,31 +471,6 @@ const projects = [
     ],
     image: pdf_scanner,
     source_code_link: "https://play.google.com/store/apps/details?id=com.docscan.camscan.pdfscanner.pagescanner.documentscanner",
-  },
-  {
-    name: "GeoPromptTracker - GEO Toolkit for AI Search",
-    description:
-      "A free toolkit for Generative Engine Optimization — making sure ChatGPT, Claude, Perplexity and Google AI Overviews can find, read and cite your site. It bundles 19 no-sign-up tools, including an llms.txt generator, a FAQPage JSON-LD schema generator, and an AI-Readiness Audit that scores any URL against the technical signals that matter for AI visibility, in the spirit of a Lighthouse report but scoped to GEO/AEO. Alongside the tools sits a maintained directory of 28 AI crawlers explaining what each bot does, whether it actually respects robots.txt, and the copy-paste rules to allow or block it — plus 38 long-form guides.",
-    tags: [
-      {
-        name: "GEO",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "AI Search",
-        color: "green-text-gradient",
-      },
-      {
-        name: "llms.txt",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "JSON-LD",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: geoprompttracker,
-    source_code_link: "https://geoprompttracker.com/",
   },
 ];
 

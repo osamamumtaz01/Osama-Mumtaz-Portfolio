@@ -12,6 +12,8 @@ import wallpaper from "./wallpaper.webp";
 import pdf_scanner from "./pdf_scanner.webp";
 import snaplingo from "./snaplingo.webp";
 import geoprompttracker from "./geoprompttracker.webp";
+import sssxdown from "./sssxdown.webp";
+import reelstomp4 from "./reelstomp4.webp";
 import mysql from "./tech/mysql.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
@@ -43,6 +45,8 @@ export {
   snaplingo,
   pdf_scanner,
   geoprompttracker,
+  sssxdown,
+  reelstomp4,
   mysql,
   firstTestimonial,
   secondTestimonial,
