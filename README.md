@@ -5,12 +5,15 @@
 <h1 align="center">Osama Mumtaz — Personal Portfolio</h1>
 
 <p align="center">
-  <b>An immersive 3D developer portfolio built with React, Three.js, and Framer Motion</b>
+  <b>A fast, single-page portfolio built with React, Vite, Tailwind CSS and Framer Motion</b>
+</p>
+
+<p align="center">
+  <a href="https://osamamumtaz.com">osamamumtaz.com</a>
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/React-18.2-61DAFB?logo=react&logoColor=white" alt="React" />
-  <img src="https://img.shields.io/badge/Three.js-0.172-black?logo=threedotjs&logoColor=white" alt="Three.js" />
   <img src="https://img.shields.io/badge/Vite-4.1-646CFF?logo=vite&logoColor=white" alt="Vite" />
   <img src="https://img.shields.io/badge/TailwindCSS-3.2-06B6D4?logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
   <img src="https://img.shields.io/badge/Framer%20Motion-9.0-FF0055?logo=framer&logoColor=white" alt="Framer Motion" />
@@ -20,7 +23,12 @@
 
 ## 🚀 Overview
 
-A modern, interactive developer portfolio that showcases my professional journey, technical skills, and featured projects. The site features **immersive 3D models**, **smooth scroll-triggered animations**, and a **functional contact form** — all wrapped in a sleek dark theme designed to leave a lasting impression.
+A single-page portfolio showcasing my professional background, technical skills and shipped
+products. The site is a static SPA — no backend, no routing — with anchor-based navigation
+between sections, scroll-triggered animations, and a contact form wired directly to EmailJS.
+
+The design is a dark glassmorphic theme: layered translucent cards, subtle gradient glows,
+and a warm amber/coral accent.
 
 ---
 
@@ -28,16 +36,14 @@ A modern, interactive developer portfolio that showcases my professional journey
 
 | Feature | Description |
 |---|---|
-| **3D Hero Scene** | Interactive rotating 3D desktop PC model rendered with React Three Fiber & Drei |
-| **3D Earth Model** | Animated Earth globe in the contact section with orbital camera controls |
-| **Star Field Background** | Randomly generated star particles creating an immersive space atmosphere |
-| **Scroll Animations** | Smooth, staggered entrance animations powered by Framer Motion |
-| **GSAP Animations** | High-performance timeline-based animations using GSAP |
-| **Interactive Tech Balls** | 3D technology icon spheres that users can rotate and interact with |
-| **Contact Form** | Fully functional email form integrated with EmailJS |
-| **Responsive Design** | Optimized layout across all breakpoints (mobile, tablet, desktop) |
-| **Tilt Effects** | Parallax card tilt effects on hover using `react-tilt` |
-| **Vertical Timeline** | Professional experience displayed in an elegant vertical timeline |
+| **Glass hero card** | Profile card with live availability status, key stats and stack pills |
+| **Scroll animations** | Staggered entrance animations on every section via Framer Motion |
+| **Data-driven content** | Every section renders from `src/constants/index.js` — no component edits needed |
+| **Testimonials** | Paginated testimonial grid with expandable full-text modal |
+| **Contact form** | EmailJS-backed form with success modal and graceful unconfigured state |
+| **Responsive design** | Tuned across mobile, tablet and desktop breakpoints |
+| **SEO ready** | Meta description, canonical, Open Graph / Twitter cards, JSON-LD `Person`, sitemap and robots.txt |
+| **Optimized media** | WebP imagery, lazy loading below the fold, preloaded hero image |
 
 ---
 
@@ -46,40 +52,42 @@ A modern, interactive developer portfolio that showcases my professional journey
 ```
 Osama-Mumtaz-Portfolio/
 ├── public/
-│   ├── desktop_pc/          # 3D Desktop PC model (GLTF)
-│   └── planet/              # 3D Earth model (GLTF)
+│   ├── favicon.svg              # Site icon
+│   ├── og-image.jpg             # 1200×630 social share card
+│   ├── profile.webp             # Hero portrait
+│   ├── robots.txt
+│   └── sitemap.xml
 ├── src/
-│   ├── assets/              # Images, icons, and static media
+│   ├── assets/                  # Images, tech icons, static media
 │   ├── components/
-│   │   ├── canvas/
-│   │   │   ├── Computers.jsx   # 3D Desktop PC canvas
-│   │   │   ├── Earth.jsx       # 3D Earth globe canvas
-│   │   │   └── Stars.jsx       # Star particle field
-│   │   ├── Hero.jsx            # Hero section with intro text
-│   │   ├── About.jsx           # About me + service cards
-│   │   ├── Experience.jsx      # Work experience timeline
-│   │   ├── Tech.jsx            # Technology stack showcase
-│   │   ├── Works.jsx           # Featured projects gallery
-│   │   ├── Feedbacks.jsx       # Client testimonials
-│   │   ├── Contact.jsx         # Contact form with 3D Earth
-│   │   ├── Navbar.jsx          # Navigation bar
-│   │   ├── Footer.jsx          # Footer section
-│   │   └── Loader.jsx          # Loading spinner for 3D models
+│   │   ├── Navbar.jsx           # Fixed nav with scroll-aware background
+│   │   ├── Hero.jsx             # Hero section + glass profile card
+│   │   ├── About.jsx            # Role / service cards
+│   │   ├── Experience.jsx       # Work experience timeline
+│   │   ├── Education.jsx        # Academic background
+│   │   ├── Tech.jsx             # Technology stack grid
+│   │   ├── Works.jsx            # Featured projects gallery
+│   │   ├── Feedbacks.jsx        # Testimonials with modal
+│   │   ├── Contact.jsx          # EmailJS contact form
+│   │   ├── Footer.jsx           # Footer with social links
+│   │   ├── WhatsAppFloat.jsx    # Floating WhatsApp button
+│   │   ├── SectionHeader.jsx    # Shared section heading
+│   │   └── index.js             # Barrel export
 │   ├── constants/
-│   │   └── index.js            # All site data (services, experiences, projects, etc.)
+│   │   └── index.js             # All site data (services, experience, projects, testimonials)
 │   ├── hoc/
-│   │   └── SectionWrapper.jsx  # Higher-Order Component for consistent section layout
+│   │   └── SectionWrapper.jsx   # HOC for consistent section layout + anchor target
 │   ├── utils/
-│   │   └── motion.js           # Framer Motion animation variants
-│   ├── App.jsx                 # Root component with section composition
-│   ├── main.jsx                # Entry point
-│   ├── styles.js               # Reusable Tailwind class utilities
-│   └── index.css               # Global styles and custom CSS
-├── index.html                  # HTML entry point
-├── tailwind.config.cjs         # Tailwind CSS configuration
-├── postcss.config.cjs          # PostCSS configuration
-├── vite.config.js              # Vite build configuration
-└── package.json                # Dependencies and scripts
+│   │   └── motion.js            # Framer Motion animation variants
+│   ├── App.jsx                  # Root component
+│   ├── main.jsx                 # Entry point
+│   ├── styles.js                # Reusable Tailwind class groups
+│   └── index.css                # Global styles and custom CSS
+├── index.html                   # HTML entry point + SEO metadata
+├── tailwind.config.cjs
+├── postcss.config.cjs
+├── vite.config.js
+└── package.json
 ```
 
 ---
@@ -88,28 +96,17 @@ Osama-Mumtaz-Portfolio/
 
 ### Core
 - **React 18** — UI library with functional components & hooks
-- **Vite 4** — Lightning-fast build tool and dev server
-- **React Router DOM** — Client-side routing
-
-### 3D & Visuals
-- **Three.js** — 3D rendering engine
-- **React Three Fiber** — React renderer for Three.js
-- **@react-three/drei** — Useful helpers for R3F (OrbitControls, models, etc.)
-- **maath** — Math utilities for 3D computations
-
-### Animations
-- **Framer Motion** — Declarative scroll & layout animations
-- **GSAP** — Performance-grade timeline animations
-- **react-tilt / vanilla-tilt** — 3D parallax hover effects
-
-### Styling
-- **Tailwind CSS 3** — Utility-first CSS framework
+- **Vite 4** — Build tool and dev server
+- **Tailwind CSS 3** — Utility-first CSS, with a custom color and font theme
 - **PostCSS + Autoprefixer** — CSS processing pipeline
 
+### Animation & UI
+- **Framer Motion** — Scroll-triggered and layout animations
+- **React Icons** — Icon set used in contact, footer and the WhatsApp button
+
 ### Integrations
-- **EmailJS** — Send emails directly from the contact form (no backend needed)
-- **React Icons** — Icon library with popular icon packs
-- **Heroicons** — Beautiful hand-crafted SVG icons
+- **EmailJS** — Sends the contact form without a backend
+- **Google Analytics (gtag.js)** — Traffic analytics
 
 ---
 
@@ -118,53 +115,79 @@ Osama-Mumtaz-Portfolio/
 ### Prerequisites
 
 - **Node.js** ≥ 16
-- **npm** or **yarn**
+- **npm**
 
 ### Installation
 
 ```bash
-# Clone the repository
-git clone https://github.com/osama1malik/Osama-Mumtaz-Portfolio.git
-
-# Navigate to the project
+git clone https://github.com/osamamumtaz01/osama-mumtaz-portfolio.git
 cd Osama-Mumtaz-Portfolio
-
-# Install dependencies
 npm install
 ```
+
+### Environment variables
+
+The contact form needs EmailJS credentials. Copy the example file and fill it in:
+
+```bash
+cp .env.example .env
+```
+
+```
+VITE_APP_EMAILJS_SERVICE_ID=your_service_id
+VITE_APP_EMAILJS_TEMPLATE_ID=your_template_id
+VITE_APP_EMAILJS_PUBLIC_KEY=your_public_key
+```
+
+Without these the form stays visible but shows a clear "not configured" message on submit.
 
 ### Development
 
 ```bash
-# Start the dev server
 npm run dev
 ```
 
-The app will be available at `http://localhost:5173`
+Available at `http://localhost:5173`.
 
-### Production Build
+### Production build
 
 ```bash
-# Create optimized build
-npm run build
-
-# Preview production build
-npm run preview
+npm run build     # outputs to dist/
+npm run preview   # serve the production build locally
 ```
 
 ---
 
 ## 🎨 Customization
 
-All portfolio content is centralized in a single file for easy updates:
+All portfolio content lives in one file — **`src/constants/index.js`**:
 
-**`src/constants/index.js`** — Edit this file to update:
-- Navigation links
-- Services / roles
-- Technology stack
-- Work experience entries
-- Projects showcase
-- Client testimonials
+| Export | Controls |
+|---|---|
+| `navLinks` | Navigation items (each `id` must match a section anchor) |
+| `heroStats` / `heroStack` / `heroProfile` | Hero card content |
+| `services` | Role cards in the About section |
+| `technologies` | Tech stack grid |
+| `experiences` | Work experience timeline |
+| `educations` | Education entries |
+| `projects` | Featured projects gallery |
+| `testimonials` | Testimonials |
+
+Section anchors are set where each component is exported, e.g.
+`export default SectionWrapper(Works, "projects")`. When adding a nav link, make sure its
+`id` matches the anchor passed to `SectionWrapper`.
+
+Theme colors and fonts are defined in `tailwind.config.cjs`; custom classes such as
+`glass-card`, `hero-glass` and `hero-cta-primary` live in `src/index.css`.
+
+---
+
+## 🔍 SEO notes
+
+- Update `<link rel="canonical">`, the `og:url` / `og:image` values and `public/sitemap.xml`
+  if the domain ever changes.
+- `public/og-image.jpg` is the social share card (1200×630). Regenerate it whenever the
+  headline stats or job title change.
 
 ---
 

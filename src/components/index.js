@@ -1,4 +1,3 @@
-import { EarthCanvas, ComputersCanvas, StarsCanvas } from './canvas';
 import Hero from "./Hero";
 import Navbar from "./Navbar";
 import About from "./About";
@@ -8,8 +7,8 @@ import Education from "./Education";
 import Works from "./Works";
 import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
-import CanvasLoader from "./Loader";
-
+import Footer from "./Footer";
+import WhatsAppFloat from "./WhatsAppFloat";
 
 export {
   Hero,
@@ -21,8 +20,6 @@ export {
   Works,
   Feedbacks,
   Contact,
-  CanvasLoader,
-  EarthCanvas, 
-  ComputersCanvas, 
-  StarsCanvas
+  Footer,
+  WhatsAppFloat,
 };

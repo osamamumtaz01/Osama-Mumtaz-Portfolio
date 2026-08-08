@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
@@ -25,12 +24,13 @@ const Navbar = () => {
             : "bg-transparent"
         }`}
       >
-        <Link
-          to="/"
+        <a
+          href="/"
           className="flex items-center gap-3 shrink-0"
-          onClick={() => {
+          onClick={(event) => {
+            event.preventDefault();
             setActive("");
-            window.scrollTo(0, 0);
+            window.scrollTo({ top: 0, behavior: "smooth" });
           }}
         >
           <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-brand to-accent p-[1px]">
@@ -42,7 +42,7 @@ const Navbar = () => {
             <p className="text-white font-medium text-[15px] leading-tight">Osama Mumtaz</p>
             <p className="text-secondary text-[11px]">Product & Engineering</p>
           </div>
-        </Link>
+        </a>
 
         <ul className="list-none hidden md:flex items-center gap-1">
           {navLinks.map((nav) => (
