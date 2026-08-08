@@ -11,8 +11,8 @@ const PROJECTS_PER_PAGE = 4;
 
 const FILTERS = [
   { id: "all", label: "All" },
-  { id: "web", label: "Web" },
   { id: "mobile", label: "Mobile Apps" },
+  { id: "web", label: "Web" },
 ];
 
 const isPlayStoreLink = (url) => Boolean(url) && url.includes("play.google.com");
