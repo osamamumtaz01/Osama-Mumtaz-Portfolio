@@ -28,6 +28,8 @@ const Tech = () => {
               <img
                 src={technology.icon}
                 alt={technology.name}
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-contain opacity-90 group-hover:opacity-100 transition-opacity"
               />
             </div>

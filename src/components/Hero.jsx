@@ -31,8 +31,12 @@ const HeroProfileCard = () => {
         <div className="relative aspect-[5/4] sm:aspect-[16/12] bg-tertiary overflow-hidden">
           {!profileError ? (
             <img
-              src="/profile.png"
+              src="/profile.webp"
               alt="Osama Mumtaz"
+              width={1000}
+              height={1620}
+              decoding="async"
+              fetchpriority="high"
               className="absolute inset-0 w-full h-50 object-cover object-[center_0%] scale-[0.5] origin-top"
               onError={() => setProfileError(true)}
             />

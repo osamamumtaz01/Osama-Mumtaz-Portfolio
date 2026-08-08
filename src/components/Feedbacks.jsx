@@ -104,7 +104,11 @@ const TestimonialModal = ({ testimonial, onClose }) => {
 
           <img
             src={image}
-            alt={`feedback by ${name}`}
+            alt={`Photo of ${name}`}
+            width={44}
+            height={44}
+            loading="lazy"
+            decoding="async"
             className="w-11 h-11 rounded-full object-cover border border-white/10"
           />
         </div>
@@ -148,7 +152,11 @@ const FeedbackCard = ({ testimonial, name, designation, company, image, onReadMo
         <div className="mt-auto pt-6 flex items-center gap-3 border-t border-white/[0.06]">
           <img
             src={image}
-            alt={`feedback by ${name}`}
+            alt={`Photo of ${name}`}
+            width={36}
+            height={36}
+            loading="lazy"
+            decoding="async"
             className="w-9 h-9 rounded-full object-cover border border-white/10"
           />
           <div>

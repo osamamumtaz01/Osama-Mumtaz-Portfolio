@@ -13,7 +13,13 @@ const ServiceCard = ({ title, icon, index }) => (
     className="glass-card p-6 sm:p-7 flex flex-col items-center text-center gap-5 h-full"
   >
     <div className="w-14 h-14 rounded-2xl bg-brand/10 border border-brand/20 flex items-center justify-center">
-      <img src={icon} alt={title} className="w-8 h-8 object-contain" />
+      <img
+        src={icon}
+        alt=""
+        loading="lazy"
+        decoding="async"
+        className="w-8 h-8 object-contain"
+      />
     </div>
     <h3 className="text-white text-[16px] sm:text-[17px] font-medium leading-snug">
       {title}
