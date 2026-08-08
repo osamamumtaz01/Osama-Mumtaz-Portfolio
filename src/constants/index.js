@@ -12,6 +12,7 @@ import {
   wallpaper,
   snaplingo,
   pdf_scanner,
+  geoprompttracker,
   mysql,
   express,
   aws,
@@ -409,6 +410,31 @@ const projects = [
     ],
     image: pdf_scanner,
     source_code_link: "https://play.google.com/store/apps/details?id=com.docscan.camscan.pdfscanner.pagescanner.documentscanner",
+  },
+  {
+    name: "GeoPromptTracker - GEO Toolkit for AI Search",
+    description:
+      "A free toolkit for Generative Engine Optimization — making sure ChatGPT, Claude, Perplexity and Google AI Overviews can find, read and cite your site. It bundles 19 no-sign-up tools, including an llms.txt generator, a FAQPage JSON-LD schema generator, and an AI-Readiness Audit that scores any URL against the technical signals that matter for AI visibility, in the spirit of a Lighthouse report but scoped to GEO/AEO. Alongside the tools sits a maintained directory of 28 AI crawlers explaining what each bot does, whether it actually respects robots.txt, and the copy-paste rules to allow or block it — plus 38 long-form guides.",
+    tags: [
+      {
+        name: "GEO",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "AI Search",
+        color: "green-text-gradient",
+      },
+      {
+        name: "llms.txt",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "JSON-LD",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: geoprompttracker,
+    source_code_link: "https://geoprompttracker.com/",
   },
 ];
 

@@ -11,6 +11,7 @@ import figma from "./tech/figma.png";
 import wallpaper from "./wallpaper.webp";
 import pdf_scanner from "./pdf_scanner.webp";
 import snaplingo from "./snaplingo.webp";
+import geoprompttracker from "./geoprompttracker.webp";
 import mysql from "./tech/mysql.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
@@ -41,6 +42,7 @@ export {
   wallpaper,
   snaplingo,
   pdf_scanner,
+  geoprompttracker,
   mysql,
   firstTestimonial,
   secondTestimonial,

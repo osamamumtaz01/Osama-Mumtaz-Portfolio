@@ -1,9 +1,12 @@
 import { motion } from "framer-motion";
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 import SectionHeader from "./SectionHeader";
 import { playstore } from "../assets";
 import { projects } from "../constants";
 import { SectionWrapper } from "../hoc";
+
+const isPlayStoreLink = (url) => Boolean(url) && url.includes("play.google.com");
 
 const ProjectCard = ({ name, description, tags, image, source_code_link, index }) => (
   <motion.article
@@ -31,9 +34,23 @@ const ProjectCard = ({ name, description, tags, image, source_code_link, index }
           target="_blank"
           rel="noopener noreferrer"
           className="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity hover:bg-white/20"
-          aria-label={`View ${name} on Play Store`}
+          aria-label={
+            isPlayStoreLink(source_code_link)
+              ? `View ${name} on the Play Store`
+              : `Visit the ${name} website`
+          }
         >
-          <img src={playstore} alt="" loading="lazy" decoding="async" className="w-5 h-5 object-contain" />
+          {isPlayStoreLink(source_code_link) ? (
+            <img
+              src={playstore}
+              alt=""
+              loading="lazy"
+              decoding="async"
+              className="w-5 h-5 object-contain"
+            />
+          ) : (
+            <FaArrowUpRightFromSquare size={15} className="text-white" />
+          )}
         </a>
       )}
     </div>
@@ -61,7 +78,7 @@ const Works = () => {
       <SectionHeader
         label="Portfolio"
         title="Featured Projects"
-        description="Real-world apps I've built and scaled — from AI-powered learning to utility products on the Play Store."
+        description="Real-world products I've built and scaled — from AI-powered mobile apps on the Play Store to tools on the web."
       />
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 sm:gap-6">
