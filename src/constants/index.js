@@ -337,6 +337,7 @@ const testimonials = [
 const projects = [
   {
     name: "ReelstoMP4 - Facebook Reels & Video Downloader",
+    category: "web",
     description:
       "A free web tool that turns a Facebook link into an MP4 — paste the URL of a public reel or video and save it in HD straight to a phone or PC, with no app to install, no signup and no data stored. It works with both facebook.com and fb.watch links, places no cap on downloads, and ships light and dark themes plus multi-language support alongside Features, How-to and FAQ pages.",
     tags: [
@@ -362,6 +363,7 @@ const projects = [
   },
   {
     name: "GeoPromptTracker - GEO Toolkit for AI Search",
+    category: "web",
     description:
       "A free toolkit for Generative Engine Optimization — making sure ChatGPT, Claude, Perplexity and Google AI Overviews can find, read and cite your site. It bundles 19 no-sign-up tools, including an llms.txt generator, a FAQPage JSON-LD schema generator, and an AI-Readiness Audit that scores any URL against the technical signals that matter for AI visibility, in the spirit of a Lighthouse report but scoped to GEO/AEO. Alongside the tools sits a maintained directory of 28 AI crawlers explaining what each bot does, whether it actually respects robots.txt, and the copy-paste rules to allow or block it — plus 38 long-form guides.",
     tags: [
@@ -387,6 +389,7 @@ const projects = [
   },
   {
     name: "sssxdown - X (Twitter) Video Downloader",
+    category: "web",
     description:
       "A free web tool for saving public videos and GIFs from X (formerly Twitter) — paste a post link and download in a couple of clicks, with no login, no watermark and nothing stored server-side. It handles several links at once, ships a light and dark theme, and is localised into multiple languages. Supporting pages cover how-to steps, an FAQ, release notes and a privacy policy, and the whole tool stays free through a single unobtrusive ad placement.",
     tags: [
@@ -412,6 +415,7 @@ const projects = [
   },
   {
     name: "SnapLingo - AI-Powered Language Learning App",
+    category: "mobile",
     description:
       "SnapLingo is an intelligent, cross-platform language learning application developed in Compose Multiplatform designed specifically for children. It delivers a highly personalized educational experience through dynamic AI-generated lessons and an interactive AI chat tutor. To keep learners engaged, the app integrates rich gamification features including XP points, daily streaks, and achievement badges. It also features a comprehensive family management system, allowing parents to track multiple children's progress, alongside a seamless subscription model for premium content.",
     tags: [
@@ -436,6 +440,7 @@ const projects = [
   },
   {
     name: "Live Wallpapers 4K, HD, Anime - AI-Powered Personalization App",
+    category: "mobile",
     description:
       "A feature-rich, dynamic screen personalization application that brings mobile interfaces to life. The app goes beyond static backgrounds by offering an integrated AI Wallpaper Generator, allowing users to create custom, high-definition wallpapers instantly using text prompts. It also houses a massive, categorized library of ultra-HD 4K, 3D, and 4D parallax wallpapers to suit diverse user preferences.",
     tags: [
@@ -453,6 +458,7 @@ const projects = [
   },
   {
     name: "PDF Scanner : Document Reader",
+    category: "mobile",
     description:
       "A comprehensive utility application that transforms a smartphone camera into a powerful, portable document scanner. Designed for seamless digitization, the app allows users to scan, manage, and share high-quality PDFs on the go. It utilizes advanced image processing to accurately capture multi-page documents, ID cards, and books, making digital archiving completely effortless.",
     tags: [
