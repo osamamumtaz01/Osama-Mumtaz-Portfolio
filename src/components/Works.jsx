@@ -16,7 +16,11 @@ const ProjectCard = ({ name, description, tags, image, source_code_link, index }
     <div className="relative aspect-[16/10] overflow-hidden">
       <img
         src={image}
-        alt={name}
+        alt={`${name} — app screens`}
+        width={1376}
+        height={768}
+        loading="lazy"
+        decoding="async"
         className="w-full h-full object-cover object-left transition-transform duration-500 group-hover:scale-105"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-[#0d0b1a]/80 via-transparent to-transparent" />
@@ -29,7 +33,7 @@ const ProjectCard = ({ name, description, tags, image, source_code_link, index }
           className="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity hover:bg-white/20"
           aria-label={`View ${name} on Play Store`}
         >
-          <img src={playstore} alt="" className="w-5 h-5 object-contain" />
+          <img src={playstore} alt="" loading="lazy" decoding="async" className="w-5 h-5 object-contain" />
         </a>
       )}
     </div>
@@ -69,4 +73,4 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "projects");
