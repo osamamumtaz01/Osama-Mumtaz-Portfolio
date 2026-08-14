@@ -1,0 +1,56 @@
+# Osama Mumtaz
+
+> Technical Product Manager and Senior Software Engineer based in Islamabad, Pakistan, with 7+ years in mobile. Leads Android, QA, design and AI teams at Funsol Technologies, has shipped 50+ apps to the Google Play Store, and builds web tools alongside mobile products. Available for new opportunities, consulting and contract work.
+
+Osama Mumtaz works at the intersection of product management and hands-on
+engineering: setting roadmaps and leading cross-functional teams while still
+writing production code. His specialism is Android — Kotlin, Jetpack Compose,
+Compose Multiplatform, Firebase — plus AI-assisted product features and
+Play Store growth and monetisation.
+
+- Full name: Osama Mumtaz
+- Current role: Technical Product Manager, Funsol Technologies (Sep 2023 - present)
+- Location: Islamabad, Pakistan
+- Education: BS Software Engineering, COMSATS University Islamabad (2016-2020)
+- Experience: 7+ years in mobile; 50+ apps shipped; 40+ engineers led; 5+ teams managed
+- Contact: osamamumtaz96@gmail.com
+- Website: https://osamamumtaz.com/
+
+## Services
+
+- Android app development (Kotlin, Java, Jetpack Compose, Compose Multiplatform)
+- Cross-platform mobile development with Compose Multiplatform
+- Technical product management and roadmap ownership for mobile products
+- Engineering team leadership, hiring and code review practice
+- Play Store launch, ASO and AdMob monetisation strategy
+- AI feature integration in mobile and web products
+- Backend and DevOps support: Python, Django, Firebase, PostgreSQL, MySQL, MongoDB, Docker
+
+## Projects
+
+- [Turbo Shield VPN](https://play.google.com/store/apps/details?id=com.turboshieldvpn.fastsecure.vpn): Android VPN client with kill switch, IPv6 leak blocking, split tunnelling, Cloudflare DNS, smart server selection and per-session bandwidth recaps.
+- [ReelstoMP4](https://reelstomp4.com/): Free web tool that converts public Facebook reel and video links into downloadable MP4s in HD, with no signup and no stored data.
+- [GeoPromptTracker](https://geoprompttracker.com/): Free GEO toolkit of 19 tools for making sites readable and citable by AI search, including an llms.txt generator, FAQPage JSON-LD generator, an AI-Readiness Audit and a directory of 28 AI crawlers.
+- [sssxdown](https://sssxdown.com/): Free web tool for saving public videos and GIFs from X (Twitter), with no login, no watermark and nothing stored server-side.
+- SnapLingo: Cross-platform AI language learning app for children built in Compose Multiplatform, with AI-generated lessons, an AI chat tutor, gamification and family progress tracking.
+- [Live Wallpapers 4K, HD, Anime](https://play.google.com/store/apps/details?id=com.wallpaperapp.hdwallpapers.livewallpaperfree.coolwallpapers): Personalisation app with an AI wallpaper generator and a categorised library of 4K, 3D and 4D parallax wallpapers.
+- [PDF Scanner: Document Reader](https://play.google.com/store/apps/details?id=com.docscan.camscan.pdfscanner.pagescanner.documentscanner): Document scanning utility that turns a phone camera into a portable scanner for multi-page documents, ID cards and books.
+
+## Experience
+
+- Technical Product Manager, Funsol Technologies (Sep 2023 - present): leads Android, SQA, UI/UX, Python, web, AI and DevOps teams; owns system design, scalability and monetisation strategy.
+- Team Lead, Funsol Technologies (Oct 2021 - Sep 2023): led the Android team across architecture, feature delivery and code review.
+- Android Developer, Funsol Technologies (Aug 2020 - Oct 2021): built and optimised Android apps using MVVM, Clean Architecture and SOLID principles.
+- Jr. Android Developer, Rapidev DMCC (Jan 2020 - Jul 2020): Android development in Java and the Android SDK.
+- Web Developer Intern, EServeMD (Nov 2019 - Jan 2020): portal development in HTML, CSS and PHP.
+- Freelance Android & Web Developer, self employed (Mar 2018 - Jan 2021): mobile apps and RESTful backends in PHP and Python.
+
+## Contact
+
+- [Email](mailto:osamamumtaz96@gmail.com): osamamumtaz96@gmail.com
+- [LinkedIn](https://www.linkedin.com/in/osama1malik/): osama1malik
+- [WhatsApp](https://wa.me/+923185297392): +92 318 5297392
+
+## Optional
+
+- [Full site content](https://osamamumtaz.com/llms-full.txt): complete text of the portfolio in one file.

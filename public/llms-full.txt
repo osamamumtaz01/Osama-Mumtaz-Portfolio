@@ -1,0 +1,165 @@
+# Osama Mumtaz - Technical Product Manager & Sr. Software Engineer
+
+Source: https://osamamumtaz.com/
+Location: Islamabad, Pakistan
+Contact: osamamumtaz96@gmail.com | https://www.linkedin.com/in/osama1malik/ | +92 318 5297392
+Status: available for new opportunities
+
+## Summary
+
+Osama Mumtaz is a Technical Product Manager and Senior Software Engineer with
+more than seven years in mobile development, based in Islamabad, Pakistan. He
+works at the intersection of product and engineering — leading teams, shaping
+roadmaps, and still writing code. At Funsol Technologies he leads Android, QA,
+design and AI teams. He has shipped more than 50 apps to the Google Play Store,
+led more than 40 engineers, and managed more than 5 teams.
+
+Core specialisms: Android development in Kotlin and Java, Jetpack Compose,
+Compose Multiplatform, Firebase, technical product management, engineering
+team leadership, Play Store growth, and AdMob monetisation within Google
+policy. He also builds and ships web tools.
+
+## Skills and technologies
+
+Kotlin, Java, Python, JavaScript, HTML5, CSS3, Jetpack Compose,
+Compose Multiplatform, Android SDK, Android Studio, Django, Firebase,
+PostgreSQL, MySQL, MongoDB, Docker, Git, Figma, MVVM, Clean Architecture,
+SOLID principles, RESTful APIs, AdMob, AI feature integration.
+
+## Services offered
+
+Osama takes on Android and cross-platform app development, technical product
+management for mobile products, engineering team leadership and mentoring,
+Play Store launch and monetisation strategy, AI feature integration, and
+backend or DevOps support for mobile products.
+
+## Work experience
+
+### Technical Product Manager - Funsol Technologies (Sep 2023 - present)
+Leads and manages multiple cross-functional teams, including Android
+developers, SQA engineers, UI/UX designers, Python developers, web developers,
+AI engineers and DevOps engineers. Drives innovation, system design and
+scalability while optimising user experience and revenue strategies.
+Implemented strategic AdMob monetisation techniques to maximise revenue while
+ensuring compliance with Google policies.
+
+### Team Lead - Funsol Technologies (Oct 2021 - Sep 2023)
+Led the Android development team, overseeing architecture, feature
+implementation and code reviews. Spearheaded the development and optimisation
+of multiple high-performing utility apps.
+
+### Android Developer - Funsol Technologies (Aug 2020 - Oct 2021)
+Developed and optimised Android applications, improving user engagement and
+retention through performance enhancements. Integrated third-party APIs,
+Firebase services and in-app purchase models. Followed MVVM, Clean Architecture
+and SOLID principles.
+
+### Jr. Android Developer - Rapidev DMCC (Jan 2020 - Jul 2020)
+Developed and maintained Android applications using Java and the Android SDK,
+collaborating with cross-functional teams on feature design and implementation.
+
+### Web Developer Intern - EServeMD (Nov 2019 - Jan 2020)
+Contributed to the development and maintenance of the company's portal system
+using HTML, CSS and PHP, ensuring a responsive and user-friendly interface.
+
+### Freelance Android & Web Developer - self employed (Mar 2018 - Jan 2021)
+Began as a freelance web developer before moving into Android development.
+Designed and developed scalable mobile applications and implemented backend
+solutions with RESTful APIs using PHP and Python.
+
+## Education
+
+BS Software Engineering, COMSATS University Islamabad (2016 - 2020).
+
+## Projects
+
+### Turbo Shield VPN - Fast & Secure VPN (Android)
+https://play.google.com/store/apps/details?id=com.turboshieldvpn.fastsecure.vpn
+An Android VPN client built around leak protection and transparency rather than
+a single connect button. Smart Connect picks the fastest server automatically,
+while the full server list shows real-time load and latency per location and can
+be filtered for OTT streaming, gaming or standard use. Settings expose a kill
+switch that holds the tunnel open while reconnecting, IPv6 blocking so traffic
+cannot route around an IPv4-only tunnel, privacy-focused Cloudflare DNS,
+Android-level always-on VPN, split tunnelling and connect-on-launch. A live
+stats screen graphs throughput, latency, VPN IP and protocol, and every session
+ends with a recap of time connected, bandwidth used and whether any leaks
+occurred. Technologies: Android, VPN, OpenVPN, privacy.
+
+### ReelstoMP4 - Facebook Reels & Video Downloader (Web)
+https://reelstomp4.com/
+A free web tool that turns a Facebook link into an MP4 — paste the URL of a
+public reel or video and save it in HD straight to a phone or PC, with no app
+to install, no signup and no data stored. Works with both facebook.com and
+fb.watch links, places no cap on downloads, and ships light and dark themes
+plus multi-language support alongside Features, How-to and FAQ pages.
+
+### GeoPromptTracker - GEO Toolkit for AI Search (Web)
+https://geoprompttracker.com/
+A free toolkit for Generative Engine Optimization — making sure ChatGPT,
+Claude, Perplexity and Google AI Overviews can find, read and cite your site.
+It bundles 19 no-sign-up tools, including an llms.txt generator, a FAQPage
+JSON-LD schema generator, and an AI-Readiness Audit that scores any URL against
+the technical signals that matter for AI visibility, in the spirit of a
+Lighthouse report but scoped to GEO/AEO. Alongside the tools sits a maintained
+directory of 28 AI crawlers explaining what each bot does, whether it actually
+respects robots.txt, and the copy-paste rules to allow or block it, plus 38
+long-form guides.
+
+### sssxdown - X (Twitter) Video Downloader (Web)
+https://sssxdown.com/
+A free web tool for saving public videos and GIFs from X (formerly Twitter) —
+paste a post link and download in a couple of clicks, with no login, no
+watermark and nothing stored server-side. It handles several links at once,
+ships a light and dark theme, and is localised into multiple languages.
+Supporting pages cover how-to steps, an FAQ, release notes and a privacy policy.
+
+### SnapLingo - AI-Powered Language Learning App (Mobile)
+An intelligent, cross-platform language learning application developed in
+Compose Multiplatform, designed specifically for children. It delivers a highly
+personalised educational experience through dynamic AI-generated lessons and an
+interactive AI chat tutor. Gamification features include XP points, daily
+streaks and achievement badges. A family management system lets parents track
+multiple children's progress, alongside a subscription model for premium
+content. Technologies: Kotlin, Compose Multiplatform, Jetpack Compose, AI.
+
+### Live Wallpapers 4K, HD, Anime - AI-Powered Personalization App (Android)
+https://play.google.com/store/apps/details?id=com.wallpaperapp.hdwallpapers.livewallpaperfree.coolwallpapers
+A feature-rich, dynamic screen personalisation application. It goes beyond
+static backgrounds with an integrated AI Wallpaper Generator, letting users
+create custom high-definition wallpapers from text prompts, and houses a
+categorised library of ultra-HD 4K, 3D and 4D parallax wallpapers.
+Technologies: Kotlin, AI.
+
+### PDF Scanner: Document Reader (Android)
+https://play.google.com/store/apps/details?id=com.docscan.camscan.pdfscanner.pagescanner.documentscanner
+A comprehensive utility application that turns a smartphone camera into a
+portable document scanner. Users can scan, manage and share high-quality PDFs
+on the go. It uses advanced image processing to capture multi-page documents,
+ID cards and books. Technologies: Kotlin, Jetpack Compose, Camera API.
+
+## Testimonials
+
+Tanvir Ahmed, CEO, Funsol Technologies: "Osama is working with us as a Team
+lead (android). He manages his team activities, projects & guides them to
+complete their tasks on time. Osama is talented, dedicated & hard working guy
+in our team. His development skills are improving day by day & his team is
+excelling under his guidance. He is highly recommended to work with us always."
+
+Sarosh Khalid, COO, Rapidev DMCC: "I wholeheartedly recommend Osama as a
+remarkable software developer with exceptional coding skills. His proficiency
+is not only evident in his coding abilities but also in his remarkable talent
+for swiftly learning and mastering new technologies. His commitment to
+excellence and continuous learning make him a standout contributor to any
+development team."
+
+## Contact
+
+Email: osamamumtaz96@gmail.com
+LinkedIn: https://www.linkedin.com/in/osama1malik/
+WhatsApp: https://wa.me/+923185297392 (+92 318 5297392)
+Instagram: https://www.instagram.com/osama.1.malik/
+Facebook: https://www.facebook.com/osama.1.malik/
+Website: https://osamamumtaz.com/
+
+Typical response time: within 24 hours.
