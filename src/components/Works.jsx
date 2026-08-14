@@ -17,13 +17,26 @@ const FILTERS = [
 
 const isPlayStoreLink = (url) => Boolean(url) && url.includes("play.google.com");
 
-const ProjectCard = ({ name, description, tags, image, source_code_link, index }) => (
+const ProjectCard = ({
+  name,
+  description,
+  tags,
+  image,
+  source_code_link,
+  index,
+  hidden,
+}) => (
   <motion.article
+    hidden={hidden}
     initial={{ opacity: 0, y: 24 }}
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true, amount: 0.15 }}
     transition={{ duration: 0.5, delay: index * 0.08 }}
-    className="glass-card overflow-hidden h-full flex flex-col group"
+    // `flex` would override the [hidden] rule in the UA stylesheet, so the
+    // display utility is swapped rather than layered on top of it.
+    className={`glass-card overflow-hidden h-full group ${
+      hidden ? "hidden" : "flex flex-col"
+    }`}
   >
     <div className="relative aspect-[16/10] overflow-hidden">
       <img
@@ -110,15 +123,6 @@ const Works = () => {
   // Guards against a stale page index if the visible set ever shrinks.
   const safePage = Math.min(currentPage, totalPages - 1);
 
-  const paginatedProjects = useMemo(
-    () =>
-      filteredProjects.slice(
-        safePage * PROJECTS_PER_PAGE,
-        (safePage + 1) * PROJECTS_PER_PAGE
-      ),
-    [filteredProjects, safePage]
-  );
-
   const selectFilter = (id) => {
     setActiveFilter(id);
     setCurrentPage(0);
@@ -177,8 +181,19 @@ const Works = () => {
           transition={{ duration: 0.25 }}
           className="grid grid-cols-1 lg:grid-cols-2 gap-5 sm:gap-6"
         >
-          {paginatedProjects.map((project, index) => (
-            <ProjectCard key={project.name} index={index} {...project} />
+          {/*
+            Every project in the active filter stays in the DOM; off-page cards
+            are hidden rather than unmounted. Slicing here would leave later
+            pages out of the prerendered HTML, so crawlers and AI engines would
+            only ever see the first four projects.
+          */}
+          {filteredProjects.map((project, index) => (
+            <ProjectCard
+              key={project.name}
+              index={index % PROJECTS_PER_PAGE}
+              hidden={Math.floor(index / PROJECTS_PER_PAGE) !== safePage}
+              {...project}
+            />
           ))}
         </motion.div>
       </AnimatePresence>
