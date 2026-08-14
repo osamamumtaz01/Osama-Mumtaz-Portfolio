@@ -7,6 +7,7 @@ import Education from "./Education";
 import Works from "./Works";
 import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
+import Faq from "./Faq";
 import Footer from "./Footer";
 import WhatsAppFloat from "./WhatsAppFloat";
 
@@ -20,6 +21,7 @@ export {
   Works,
   Feedbacks,
   Contact,
+  Faq,
   Footer,
   WhatsAppFloat,
 };

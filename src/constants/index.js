@@ -54,6 +54,10 @@ export const navLinks = [
     title: "Testimonials",
   },
   {
+    id: "faq",
+    title: "FAQ",
+  },
+  {
     id: "contact",
     title: "Contact",
   },
@@ -241,6 +245,49 @@ const educations = [
     iconBg: "#383E56",
     date: "2016 - 2020",
   }
+];
+
+const faqs = [
+  {
+    question: "What does Osama Mumtaz do?",
+    answer:
+      "Osama Mumtaz is a Technical Product Manager and Senior Software Engineer based in Islamabad, Pakistan, with 7+ years in mobile. He leads Android, QA, design and AI teams at Funsol Technologies, and works across both sides of the job \u2014 owning product roadmaps while still writing production code. He has shipped 50+ apps to the Google Play Store and led 40+ engineers.",
+  },
+  {
+    question: "Is Osama available for freelance, contract or consulting work?",
+    answer:
+      "Yes. He takes on Android and cross-platform app builds, technical product management for mobile products, engineering team leadership, and Play Store launch and monetisation work. The fastest way to start a conversation is email at osamamumtaz96@gmail.com or WhatsApp at +92 318 5297392 \u2014 he typically replies within 24 hours.",
+  },
+  {
+    question: "What technologies does he build with?",
+    answer:
+      "Android in Kotlin and Java, Jetpack Compose and Compose Multiplatform for cross-platform work, and Firebase for backend services. Beyond mobile he works with Python, Django, JavaScript, PostgreSQL, MySQL, MongoDB and Docker, and integrates AI features into both mobile and web products.",
+  },
+  {
+    question: "Can he build one app for both Android and iOS?",
+    answer:
+      "Yes. SnapLingo, an AI-powered language learning app for children, is built in Compose Multiplatform \u2014 a single Kotlin codebase serving both platforms. For projects where a shared codebase makes sense, this cuts duplicated work without giving up native performance.",
+  },
+  {
+    question: "Does he only do mobile, or web too?",
+    answer:
+      "Both. Alongside Play Store apps he designs and ships web products, including GeoPromptTracker (a toolkit for AI search visibility), ReelstoMP4 and sssxdown. His background started in web development before he moved into Android, so he is comfortable across the stack.",
+  },
+  {
+    question: "What experience does he have leading teams?",
+    answer:
+      "He has led 40+ engineers across 5+ teams. As Technical Product Manager at Funsol Technologies he runs cross-functional groups spanning Android, SQA, UI/UX, Python, web, AI and DevOps, and was previously Android Team Lead there, owning architecture, delivery and code review practice.",
+  },
+  {
+    question: "Where is he based, and does he work with international clients?",
+    answer:
+      "He is based in Islamabad, Pakistan, and works remotely with clients in other time zones. Email, LinkedIn and WhatsApp are all open channels for an initial conversation.",
+  },
+  {
+    question: "What is his experience with Play Store growth and monetisation?",
+    answer:
+      "He has taken utility apps from launch to scale on the Play Store and implemented AdMob monetisation strategies built to maximise revenue while staying inside Google's policies \u2014 a distinction that matters, since policy violations can pull an app's revenue or listing entirely.",
+  },
 ];
 
 const testimonials = [
@@ -508,4 +555,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, educations, testimonials, projects };
+export { services, technologies, experiences, educations, testimonials, projects, faqs };

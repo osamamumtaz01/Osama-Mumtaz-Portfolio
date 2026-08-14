@@ -132,14 +132,14 @@ const Hero = () => {
               {...fadeUp(0)}
               className="text-brand-light text-sm font-light tracking-wide mb-5"
             >
-              Technical Product Manager · Islamabad
+              Technical Product Manager & Android Developer · Islamabad, Pakistan
             </motion.p>
 
             <motion.h1
               {...fadeUp(0.08)}
               className="text-white font-normal text-[34px] sm:text-[42px] lg:text-[48px] leading-[1.15] tracking-tight"
             >
-              I build mobile products that{" "}
+              I build Android apps that{" "}
               <span className="hero-gradient-text font-medium">scale</span> - and
               teams that deliver.
             </motion.h1>

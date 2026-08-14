@@ -3,6 +3,7 @@ import {
   Contact,
   Education,
   Experience,
+  Faq,
   Feedbacks,
   Footer,
   Hero,
@@ -25,6 +26,7 @@ const App = () => {
         <Tech />
         <Works />
         <Feedbacks />
+        <Faq />
         <Contact />
       </main>
 
