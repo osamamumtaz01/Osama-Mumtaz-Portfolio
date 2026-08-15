@@ -8,6 +8,7 @@ import Works from "./Works";
 import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import Faq from "./Faq";
+import ThemeToggle from "./ThemeToggle";
 import Footer from "./Footer";
 import WhatsAppFloat from "./WhatsAppFloat";
 
@@ -22,6 +23,7 @@ export {
   Feedbacks,
   Contact,
   Faq,
+  ThemeToggle,
   Footer,
   WhatsAppFloat,
 };

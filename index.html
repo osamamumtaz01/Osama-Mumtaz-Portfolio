@@ -48,6 +48,27 @@
 
     <link rel="preload" as="image" href="/profile.webp" fetchpriority="high" />
 
+    <script>
+      // Applies the theme before first paint so there is no flash of the wrong
+      // one. Kept inline and synchronous on purpose.
+      (function () {
+        try {
+          var stored = localStorage.getItem("theme");
+          var theme =
+            stored ||
+            (window.matchMedia("(prefers-color-scheme: light)").matches
+              ? "light"
+              : "dark");
+          document.documentElement.dataset.theme = theme;
+          var meta = document.querySelector('meta[name="theme-color"]');
+          if (meta) meta.content = theme === "dark" ? "#050816" : "#f6f7fb";
+        } catch (e) {
+          document.documentElement.dataset.theme = "dark";
+        }
+      })();
+    </script>
+
+
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",

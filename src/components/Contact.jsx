@@ -43,7 +43,7 @@ const SuccessModal = ({ isOpen, onClose }) => {
         <button
           type="button"
           onClick={onClose}
-          className="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/10 text-white text-xl leading-none hover:bg-white/20 transition-colors"
+          className="absolute top-4 right-4 w-9 h-9 rounded-full bg-ink/10 text-ink text-xl leading-none hover:bg-ink/20 transition-colors"
           aria-label="Close"
         >
           ×
@@ -53,7 +53,7 @@ const SuccessModal = ({ isOpen, onClose }) => {
           ✓
         </div>
 
-        <h3 id="contact-success-title" className="text-white font-medium text-2xl">
+        <h3 id="contact-success-title" className="text-ink font-medium text-2xl">
           Message sent
         </h3>
 
@@ -170,7 +170,7 @@ const Contact = () => {
           className="glass-card-static p-6 sm:p-8 space-y-6"
         >
           <div>
-            <h3 className="text-white text-lg font-medium">Direct channels</h3>
+            <h3 className="text-ink text-lg font-medium">Direct channels</h3>
             <p className="text-secondary text-sm font-light mt-2 leading-relaxed">
               Prefer reaching out directly? Use any of these — I&apos;m happy to connect.
             </p>
@@ -183,14 +183,14 @@ const Contact = () => {
                 href={href}
                 target={href.startsWith("http") ? "_blank" : undefined}
                 rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
-                className="flex items-center gap-4 p-4 rounded-xl bg-white/[0.03] border border-white/[0.06] hover:border-brand/25 hover:bg-white/[0.05] transition-colors group"
+                className="flex items-center gap-4 p-4 rounded-xl bg-ink/[0.03] border border-ink/[0.06] hover:border-brand/25 hover:bg-ink/[0.05] transition-colors group"
               >
-                <div className="w-10 h-10 rounded-xl bg-brand/10 border border-brand/20 flex items-center justify-center text-brand-light group-hover:text-white transition-colors">
+                <div className="w-10 h-10 rounded-xl bg-brand/10 border border-brand/20 flex items-center justify-center text-brand-light group-hover:text-ink transition-colors">
                   <Icon size={18} />
                 </div>
                 <div>
                   <p className="text-secondary text-xs font-light">{label}</p>
-                  <p className="text-white text-sm font-light mt-0.5">{value}</p>
+                  <p className="text-ink text-sm font-light mt-0.5">{value}</p>
                 </div>
               </a>
             ))}
@@ -206,7 +206,7 @@ const Contact = () => {
         >
           <form ref={formRef} onSubmit={handleSubmit} className="flex flex-col gap-5">
             <label className="flex flex-col gap-2">
-              <span className="text-white/80 text-sm font-light">Your name</span>
+              <span className="text-ink/80 text-sm font-light">Your name</span>
               <input
                 type="text"
                 name="name"
@@ -214,12 +214,12 @@ const Contact = () => {
                 onChange={handleChange}
                 placeholder="John Doe"
                 required
-                className="modern-input py-3.5 px-4 text-white text-[15px] font-light placeholder:text-secondary/60"
+                className="modern-input py-3.5 px-4 text-ink text-[15px] font-light placeholder:text-secondary/60"
               />
             </label>
 
             <label className="flex flex-col gap-2">
-              <span className="text-white/80 text-sm font-light">Your email</span>
+              <span className="text-ink/80 text-sm font-light">Your email</span>
               <input
                 type="email"
                 name="email"
@@ -227,12 +227,12 @@ const Contact = () => {
                 onChange={handleChange}
                 placeholder="you@company.com"
                 required
-                className="modern-input py-3.5 px-4 text-white text-[15px] font-light placeholder:text-secondary/60"
+                className="modern-input py-3.5 px-4 text-ink text-[15px] font-light placeholder:text-secondary/60"
               />
             </label>
 
             <label className="flex flex-col gap-2">
-              <span className="text-white/80 text-sm font-light">Message</span>
+              <span className="text-ink/80 text-sm font-light">Message</span>
               <textarea
                 rows={6}
                 name="message"
@@ -240,7 +240,7 @@ const Contact = () => {
                 onChange={handleChange}
                 placeholder="Tell me about your project or opportunity..."
                 required
-                className="modern-input py-3.5 px-4 text-white text-[15px] font-light placeholder:text-secondary/60 resize-none"
+                className="modern-input py-3.5 px-4 text-ink text-[15px] font-light placeholder:text-secondary/60 resize-none"
               />
             </label>
 

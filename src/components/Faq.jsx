@@ -24,9 +24,9 @@ const FaqItem = ({ question, answer, index, isOpen, onToggle }) => {
           aria-expanded={isOpen}
           aria-controls={panelId}
           onClick={onToggle}
-          className="w-full flex items-start justify-between gap-4 text-left p-5 sm:p-6 hover:bg-white/[0.02] transition-colors"
+          className="w-full flex items-start justify-between gap-4 text-left p-5 sm:p-6 hover:bg-ink/[0.02] transition-colors"
         >
-          <span className="text-white text-[15px] sm:text-base font-medium leading-snug">
+          <span className="text-ink text-[15px] sm:text-base font-medium leading-snug">
             {question}
           </span>
           <span

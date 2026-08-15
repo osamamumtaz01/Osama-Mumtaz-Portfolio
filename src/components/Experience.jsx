@@ -18,13 +18,13 @@ const ExperienceCard = ({ experience, index, isLast }) => (
 
     <div className="relative pl-0 md:pl-8">
       {!isLast && (
-        <span className="hidden md:block absolute left-[3px] top-8 bottom-0 w-px bg-white/10" />
+        <span className="hidden md:block absolute left-[3px] top-8 bottom-0 w-px bg-ink/10" />
       )}
       <span className="hidden md:block absolute left-0 top-2 w-[7px] h-[7px] rounded-full bg-brand border-2 border-primary" />
 
       <div className="glass-card p-6 sm:p-7">
         <div className="flex items-start gap-4">
-          <div className="w-11 h-11 shrink-0 rounded-xl bg-white/[0.04] border border-white/[0.08] flex items-center justify-center">
+          <div className="w-11 h-11 shrink-0 rounded-xl bg-ink/[0.04] border border-ink/[0.08] flex items-center justify-center">
             <img
               src={experience.icon}
               alt={experience.company_name}
@@ -34,7 +34,7 @@ const ExperienceCard = ({ experience, index, isLast }) => (
             />
           </div>
           <div>
-            <h3 className="text-white text-lg font-medium">{experience.title}</h3>
+            <h3 className="text-ink text-lg font-medium">{experience.title}</h3>
             <p className="text-secondary text-sm font-light mt-1">
               {experience.company_name}
             </p>
@@ -45,7 +45,7 @@ const ExperienceCard = ({ experience, index, isLast }) => (
           {experience.points.map((point, pointIndex) => (
             <li
               key={pointIndex}
-              className="flex gap-3 text-white/75 text-[14px] font-light leading-relaxed"
+              className="flex gap-3 text-ink/75 text-[14px] font-light leading-relaxed"
             >
               <span className="text-brand-light shrink-0 mt-1.5 w-1 h-1 rounded-full bg-brand-light" />
               {point}

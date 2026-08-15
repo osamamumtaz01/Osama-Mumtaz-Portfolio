@@ -55,7 +55,7 @@ const ProjectCard = ({
           href={source_code_link}
           target="_blank"
           rel="noopener noreferrer"
-          className="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center opacity-0 group-hover:opacity-100 focus-visible:opacity-100 transition-opacity hover:bg-white/20"
+          className="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center opacity-0 group-hover:opacity-100 focus-visible:opacity-100 transition-opacity hover:bg-ink/20"
           aria-label={
             isPlayStoreLink(source_code_link)
               ? `View ${name} on the Play Store`
@@ -78,7 +78,7 @@ const ProjectCard = ({
     </div>
 
     <div className="p-6 sm:p-7 flex flex-col flex-1">
-      <h3 className="text-white text-lg font-medium leading-snug">{name}</h3>
+      <h3 className="text-ink text-lg font-medium leading-snug">{name}</h3>
       <p className="mt-3 text-secondary text-[14px] font-light leading-relaxed line-clamp-4 flex-1">
         {description}
       </p>
@@ -156,8 +156,8 @@ const Works = () => {
             onClick={() => selectFilter(id)}
             className={`px-4 py-2 rounded-xl text-[13px] font-light transition-colors border ${
               activeFilter === id
-                ? "bg-brand/15 border-brand/30 text-white"
-                : "bg-white/[0.03] border-white/[0.08] text-secondary hover:text-white hover:border-white/20"
+                ? "bg-brand/15 border-brand/30 text-ink"
+                : "bg-ink/[0.03] border-ink/[0.08] text-secondary hover:text-ink hover:border-ink/20"
             }`}
           >
             {label}
@@ -204,7 +204,7 @@ const Works = () => {
             type="button"
             onClick={() => goToPage(safePage - 1)}
             disabled={safePage === 0}
-            className="px-5 py-2.5 rounded-xl glass-card-static text-white text-sm font-light disabled:opacity-40 disabled:cursor-not-allowed hover:border-brand/30 transition-colors"
+            className="px-5 py-2.5 rounded-xl glass-card-static text-ink text-sm font-light disabled:opacity-40 disabled:cursor-not-allowed hover:border-brand/30 transition-colors"
             aria-label="Previous projects"
           >
             Previous
@@ -221,7 +221,7 @@ const Works = () => {
                 className={`h-2 rounded-full transition-all ${
                   safePage === index
                     ? "w-7 bg-brand"
-                    : "w-2 bg-white/25 hover:bg-white/40"
+                    : "w-2 bg-ink/25 hover:bg-ink/40"
                 }`}
               />
             ))}
@@ -231,7 +231,7 @@ const Works = () => {
             type="button"
             onClick={() => goToPage(safePage + 1)}
             disabled={safePage === totalPages - 1}
-            className="px-5 py-2.5 rounded-xl glass-card-static text-white text-sm font-light disabled:opacity-40 disabled:cursor-not-allowed hover:border-brand/30 transition-colors"
+            className="px-5 py-2.5 rounded-xl glass-card-static text-ink text-sm font-light disabled:opacity-40 disabled:cursor-not-allowed hover:border-brand/30 transition-colors"
             aria-label="Next projects"
           >
             Next

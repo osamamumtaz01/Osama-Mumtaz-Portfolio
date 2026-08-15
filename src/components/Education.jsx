@@ -12,7 +12,7 @@ const EducationCard = ({ education, index }) => (
     transition={{ duration: 0.45, delay: index * 0.08 }}
     className="glass-card p-6 sm:p-7 flex flex-col sm:flex-row sm:items-center gap-5 sm:gap-6"
   >
-    <div className="w-12 h-12 shrink-0 rounded-xl bg-white/[0.04] border border-white/[0.08] flex items-center justify-center">
+    <div className="w-12 h-12 shrink-0 rounded-xl bg-ink/[0.04] border border-ink/[0.08] flex items-center justify-center">
       <img
         src={education.icon}
         alt={education.institution}
@@ -23,7 +23,7 @@ const EducationCard = ({ education, index }) => (
     </div>
 
     <div className="flex-1 min-w-0">
-      <h3 className="text-white text-lg font-medium">{education.title}</h3>
+      <h3 className="text-ink text-lg font-medium">{education.title}</h3>
       <p className="text-secondary text-sm font-light mt-1">{education.institution}</p>
     </div>
 

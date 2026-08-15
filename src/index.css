@@ -5,18 +5,91 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ---------------------------------------------------------------------------
+   Theme tokens.
+
+   Values are space-separated RGB channels so Tailwind can apply its own alpha
+   (e.g. bg-ink/[0.06] -> rgb(var(--ink) / 0.06)).
+
+   `--ink` is the foreground/overlay base: white on the dark theme, near-black
+   on the light one. Because the design expresses every surface and border as
+   "ink at low alpha", flipping this one token inverts the whole system.
+--------------------------------------------------------------------------- */
+:root {
+  color-scheme: dark;
+
+  --ink: 255 255 255;
+  --primary: 5 8 22;
+  --secondary: 170 166 195;
+  --tertiary: 21 16 48;
+  --black-100: 16 13 37;
+  --black-200: 9 3 37;
+  --white-100: 243 243 243;
+
+  --brand: 232 115 74;
+  --brand-light: 244 165 116;
+  --accent: 232 184 74;
+
+  --surface-from: 255 255 255 / 0.06;
+  --surface-to: 255 255 255 / 0.02;
+  --surface-border: 255 255 255 / 0.08;
+  --card-shadow: none;
+  --grid-line: 255 255 255 / 0.03;
+  --hero-text-gradient: linear-gradient(135deg, #F4A574 0%, #E8734A 55%, #E8B84A 100%);
+  --cta-gradient: linear-gradient(135deg, #E8734A 0%, #C85832 100%);
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+
+  --ink: 17 20 33;
+  --primary: 246 247 251;
+  --secondary: 88 94 112;
+  --tertiary: 233 234 242;
+  --black-100: 255 255 255;
+  --black-200: 240 241 247;
+  --white-100: 26 26 26;
+
+  --brand: 214 92 45;
+  --brand-light: 176 71 29;
+  --accent: 138 90 0;
+
+  /* Light cards read as white panels lifted off a tinted page, rather than a
+     dark tint, which is what a straight inversion of the dark theme would give. */
+  --surface-from: 255 255 255 / 0.95;
+  --surface-to: 255 255 255 / 0.75;
+  --surface-border: 17 20 33 / 0.09;
+  --card-shadow: 0 1px 2px rgb(17 20 33 / 0.04), 0 8px 24px -16px rgb(17 20 33 / 0.18);
+  --grid-line: 17 20 33 / 0.04;
+  --hero-text-gradient: linear-gradient(135deg, #C2410C 0%, #B0471D 55%, #8A5A00 100%);
+  /* Darker on light so the white label clears AA contrast; the alpha-based
+     gradient that reads rich on the dark theme washes out over white. */
+  --cta-gradient: linear-gradient(135deg, #C2410C 0%, #9A3412 100%);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
-  color-scheme: dark;
-
-
 }
 
 
+
+html,
+body {
+  /* Without this the page background comes only from an inner div, so
+     overscroll and any area beyond it fall back to the browser's white. */
+  background-color: rgb(var(--primary));
+  color: rgb(var(--ink));
+}
+
+/* The logo and menu glyphs are solid-white SVGs, so they need flipping on the
+   light theme. Cheaper and less error-prone than shipping a second asset set. */
+[data-theme="light"] .icon-invert {
+  filter: invert(1);
+}
 
 .hash-span {
   margin-top: -100px;
@@ -195,14 +268,14 @@
 
 .hero-grid {
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    linear-gradient(rgb(var(--grid-line)) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(var(--grid-line)) 1px, transparent 1px);
   background-size: 48px 48px;
   mask-image: radial-gradient(ellipse at center, black 20%, transparent 75%);
 }
 
 .hero-gradient-text {
-  background: linear-gradient(135deg, #F4A574 0%, #E8734A 55%, #E8B84A 100%);
+  background: var(--hero-text-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -211,19 +284,20 @@
 .hero-glass {
   background: linear-gradient(
     145deg,
-    rgba(255, 255, 255, 0.07) 0%,
-    rgba(255, 255, 255, 0.02) 100%
+    rgb(var(--surface-from)) 0%,
+    rgb(var(--surface-to)) 100%
   );
   backdrop-filter: blur(16px);
+  box-shadow: var(--card-shadow);
 }
 
 .hero-cta-primary {
-  background: linear-gradient(135deg, rgba(232, 115, 74, 0.95) 0%, rgba(200, 88, 50, 0.9) 100%);
-  box-shadow: 0 8px 28px -10px rgba(232, 115, 74, 0.45);
+  background: var(--cta-gradient);
+  box-shadow: 0 8px 28px -10px rgb(var(--brand) / 0.45);
 }
 
 .hero-cta-primary:hover {
-  box-shadow: 0 10px 32px -8px rgba(232, 115, 74, 0.55);
+  box-shadow: 0 10px 32px -8px rgb(var(--brand) / 0.55);
 }
 
 .hero-orbit-ring {
@@ -242,9 +316,9 @@
   border-radius: 9999px;
   font-size: 10px;
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.85);
-  background: rgba(232, 115, 74, 0.12);
-  border: 1px solid rgba(232, 115, 74, 0.25);
+  color: rgb(var(--ink) / 0.85);
+  background: rgb(var(--brand) / 0.12);
+  border: 1px solid rgb(var(--brand) / 0.25);
   animation: hero-orbit 24s linear infinite;
   transform-origin: 40px 14px;
 }
@@ -260,7 +334,7 @@
   pointer-events: none;
   background: radial-gradient(
     ellipse 80% 50% at 50% 0%,
-    rgba(232, 115, 74, 0.04) 0%,
+    rgb(var(--brand) / 0.05) 0%,
     transparent 60%
   );
 }
@@ -268,42 +342,44 @@
 .glass-card {
   background: linear-gradient(
     145deg,
-    rgba(255, 255, 255, 0.06) 0%,
-    rgba(255, 255, 255, 0.02) 100%
+    rgb(var(--surface-from)) 0%,
+    rgb(var(--surface-to)) 100%
   );
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgb(var(--surface-border));
   border-radius: 20px;
+  box-shadow: var(--card-shadow);
   transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .glass-card:hover {
-  border-color: rgba(232, 115, 74, 0.25);
-  box-shadow: 0 12px 40px -16px rgba(232, 115, 74, 0.2);
+  border-color: rgb(var(--brand) / 0.25);
+  box-shadow: 0 12px 40px -16px rgb(var(--brand) / 0.28);
 }
 
 .glass-card-static {
   background: linear-gradient(
     145deg,
-    rgba(255, 255, 255, 0.06) 0%,
-    rgba(255, 255, 255, 0.02) 100%
+    rgb(var(--surface-from)) 0%,
+    rgb(var(--surface-to)) 100%
   );
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgb(var(--surface-border));
   border-radius: 20px;
+  box-shadow: var(--card-shadow);
 }
 
 .modern-input {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgb(var(--ink) / 0.04);
+  border: 1px solid rgb(var(--surface-border));
   border-radius: 14px;
   transition: border-color 0.2s ease, background 0.2s ease;
 }
 
 .modern-input:focus {
   outline: none;
-  border-color: rgba(232, 115, 74, 0.45);
-  background: rgba(255, 255, 255, 0.06);
+  border-color: rgb(var(--brand) / 0.45);
+  background: rgb(var(--ink) / 0.06);
 }
 
 .tag-pill {
@@ -312,9 +388,9 @@
   border-radius: 9999px;
   font-size: 12px;
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.8);
-  background: rgba(232, 115, 74, 0.1);
-  border: 1px solid rgba(232, 115, 74, 0.2);
+  color: rgb(var(--ink) / 0.8);
+  background: rgb(var(--brand) / 0.1);
+  border: 1px solid rgb(var(--brand) / 0.2);
 }
 
 .profile-photo-bg {
@@ -325,5 +401,5 @@
 }
 
 .profile-photo-frame {
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+  box-shadow: inset 0 0 0 1px rgb(var(--ink) / 0.06);
 }

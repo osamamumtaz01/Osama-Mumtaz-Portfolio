@@ -27,7 +27,7 @@ const HeroProfileCard = () => {
       {...fadeUp(0.3)}
       className="relative w-full max-w-xl mx-auto lg:mx-0 lg:ml-auto"
     >
-      <div className="relative hero-glass rounded-[28px] border border-white/10 overflow-hidden">
+      <div className="relative hero-glass rounded-[28px] border border-ink/10 overflow-hidden">
         <div className="relative aspect-[5/4] sm:aspect-[16/12] bg-tertiary overflow-hidden">
           {!profileError ? (
             <img
@@ -42,14 +42,14 @@ const HeroProfileCard = () => {
             />
           ) : (
             <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-brand/20 via-tertiary to-primary">
-              <span className="text-6xl font-light text-white/70">OM</span>
+              <span className="text-6xl font-light text-ink/70">OM</span>
             </div>
           )}
           <div className="absolute inset-0 bg-gradient-to-t from-[#0d0b1a] via-[#0d0b1a]/20 to-transparent" />
           <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-7">
             <div className="flex items-center gap-2 mb-2">
-              <span className="w-2 h-2 rounded-full bg-accent" />
-              <span className="text-accent text-xs tracking-wide">
+              <span className="w-2 h-2 rounded-full bg-[#E8B84A]" />
+              <span className="text-[#E8B84A] text-xs tracking-wide">
                 Available for new opportunities
               </span>
             </div>
@@ -71,7 +71,7 @@ const HeroProfileCard = () => {
             {heroProfile.highlights.map((item) => (
               <li
                 key={item}
-                className="flex gap-3 text-[14px] text-white/80 font-light leading-snug"
+                className="flex gap-3 text-[14px] text-ink/80 font-light leading-snug"
               >
                 <span className="text-brand-light mt-1 shrink-0">—</span>
                 {item}
@@ -81,19 +81,19 @@ const HeroProfileCard = () => {
 
           <div className="flex flex-wrap gap-x-5 gap-y-2 text-[13px] text-secondary font-light">
             <span>
-              <span className="text-white/50">Based in </span>
+              <span className="text-ink/50">Based in </span>
               {heroProfile.location}
             </span>
             <span>
-              <span className="text-white/50">At </span>
+              <span className="text-ink/50">At </span>
               {heroProfile.company}
             </span>
           </div>
 
-          <div className="grid grid-cols-4 gap-3 pt-2 border-t border-white/[0.06]">
+          <div className="grid grid-cols-4 gap-3 pt-2 border-t border-ink/[0.06]">
             {heroStats.map((stat) => (
               <div key={stat.label} className="text-center sm:text-left">
-                <p className="text-white text-lg sm:text-xl font-medium">{stat.value}</p>
+                <p className="text-ink text-lg sm:text-xl font-medium">{stat.value}</p>
                 <p className="text-secondary text-[10px] sm:text-[11px] mt-1 leading-tight font-light">
                   {stat.label}
                 </p>
@@ -105,7 +105,7 @@ const HeroProfileCard = () => {
             {heroStack.map((item) => (
               <span
                 key={item}
-                className="px-3 py-1 rounded-full text-[11px] text-white/75 bg-white/[0.04] border border-white/[0.08] font-light"
+                className="px-3 py-1 rounded-full text-[11px] text-ink/75 bg-ink/[0.04] border border-ink/[0.08] font-light"
               >
                 {item}
               </span>
@@ -137,7 +137,7 @@ const Hero = () => {
 
             <motion.h1
               {...fadeUp(0.08)}
-              className="text-white font-normal text-[34px] sm:text-[42px] lg:text-[48px] leading-[1.15] tracking-tight"
+              className="text-ink font-normal text-[34px] sm:text-[42px] lg:text-[48px] leading-[1.15] tracking-tight"
             >
               I build Android apps that{" "}
               <span className="hero-gradient-text font-medium">scale</span> - and
@@ -161,7 +161,7 @@ const Hero = () => {
               </a>
               <a
                 href="#work"
-                className="text-secondary text-[15px] font-light hover:text-white transition-colors"
+                className="text-secondary text-[15px] font-light hover:text-ink transition-colors"
               >
                 View experience →
               </a>

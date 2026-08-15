@@ -33,7 +33,7 @@ const Tech = () => {
                 className="w-full h-full object-contain opacity-90 group-hover:opacity-100 transition-opacity"
               />
             </div>
-            <p className="text-secondary text-[11px] sm:text-xs font-light text-center leading-tight group-hover:text-white/80 transition-colors">
+            <p className="text-secondary text-[11px] sm:text-xs font-light text-center leading-tight group-hover:text-ink/80 transition-colors">
               {technology.name}
             </p>
           </motion.div>

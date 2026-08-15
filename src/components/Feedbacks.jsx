@@ -79,7 +79,7 @@ const TestimonialModal = ({ testimonial, onClose }) => {
         <button
           type="button"
           onClick={onClose}
-          className="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/10 text-white text-xl leading-none hover:bg-white/20 transition-colors"
+          className="absolute top-4 right-4 w-9 h-9 rounded-full bg-ink/10 text-ink text-xl leading-none hover:bg-ink/20 transition-colors"
           aria-label="Close"
         >
           ×
@@ -91,12 +91,12 @@ const TestimonialModal = ({ testimonial, onClose }) => {
           text={text}
           id="testimonial-modal-title"
           className="mt-2"
-          paragraphClassName="text-white/90 text-[16px] leading-relaxed font-light"
+          paragraphClassName="text-ink/90 text-[16px] leading-relaxed font-light"
         />
 
-        <div className="mt-8 flex justify-between items-center gap-4 border-t border-white/10 pt-6">
+        <div className="mt-8 flex justify-between items-center gap-4 border-t border-ink/10 pt-6">
           <div className="flex-1 flex flex-col">
-            <p className="text-white font-medium text-[15px]">{name}</p>
+            <p className="text-ink font-medium text-[15px]">{name}</p>
             <p className="mt-1 text-secondary text-[13px] font-light">
               {designation} · {company}
             </p>
@@ -109,7 +109,7 @@ const TestimonialModal = ({ testimonial, onClose }) => {
             height={44}
             loading="lazy"
             decoding="async"
-            className="w-11 h-11 rounded-full object-cover border border-white/10"
+            className="w-11 h-11 rounded-full object-cover border border-ink/10"
           />
         </div>
       </div>
@@ -134,7 +134,7 @@ const FeedbackCard = ({ testimonial, name, designation, company, image, onReadMo
         <TestimonialText
           text={preview}
           className="line-clamp-5"
-          paragraphClassName="text-[14px] text-white/80 font-light leading-relaxed"
+          paragraphClassName="text-[14px] text-ink/80 font-light leading-relaxed"
         />
 
         {isTruncated && (
@@ -143,13 +143,13 @@ const FeedbackCard = ({ testimonial, name, designation, company, image, onReadMo
             onClick={() =>
               onReadMore({ testimonial, name, designation, company, image })
             }
-            className="mt-4 self-start text-[13px] text-brand-light hover:text-white transition-colors font-light"
+            className="mt-4 self-start text-[13px] text-brand-light hover:text-ink transition-colors font-light"
           >
             Read more →
           </button>
         )}
 
-        <div className="mt-auto pt-6 flex items-center gap-3 border-t border-white/[0.06]">
+        <div className="mt-auto pt-6 flex items-center gap-3 border-t border-ink/[0.06]">
           <img
             src={image}
             alt={`Photo of ${name}`}
@@ -157,10 +157,10 @@ const FeedbackCard = ({ testimonial, name, designation, company, image, onReadMo
             height={36}
             loading="lazy"
             decoding="async"
-            className="w-9 h-9 rounded-full object-cover border border-white/10"
+            className="w-9 h-9 rounded-full object-cover border border-ink/10"
           />
           <div>
-            <p className="text-white text-[14px] font-medium">{name}</p>
+            <p className="text-ink text-[14px] font-medium">{name}</p>
             <p className="text-secondary text-[12px] font-light mt-0.5">
               {designation} · {company}
             </p>
@@ -227,7 +227,7 @@ const Feedbacks = () => {
             type="button"
             onClick={() => goToPage(currentPage - 1)}
             disabled={currentPage === 0}
-            className="px-5 py-2.5 rounded-xl glass-card-static text-white text-sm font-light disabled:opacity-40 disabled:cursor-not-allowed hover:border-brand/30 transition-colors"
+            className="px-5 py-2.5 rounded-xl glass-card-static text-ink text-sm font-light disabled:opacity-40 disabled:cursor-not-allowed hover:border-brand/30 transition-colors"
             aria-label="Previous testimonials"
           >
             Previous
@@ -244,7 +244,7 @@ const Feedbacks = () => {
                 className={`h-2 rounded-full transition-all ${
                   currentPage === index
                     ? "w-7 bg-brand"
-                    : "w-2 bg-white/25 hover:bg-white/40"
+                    : "w-2 bg-ink/25 hover:bg-ink/40"
                 }`}
               />
             ))}
@@ -254,7 +254,7 @@ const Feedbacks = () => {
             type="button"
             onClick={() => goToPage(currentPage + 1)}
             disabled={currentPage === totalPages - 1}
-            className="px-5 py-2.5 rounded-xl glass-card-static text-white text-sm font-light disabled:opacity-40 disabled:cursor-not-allowed hover:border-brand/30 transition-colors"
+            className="px-5 py-2.5 rounded-xl glass-card-static text-ink text-sm font-light disabled:opacity-40 disabled:cursor-not-allowed hover:border-brand/30 transition-colors"
             aria-label="Next testimonials"
           >
             Next
