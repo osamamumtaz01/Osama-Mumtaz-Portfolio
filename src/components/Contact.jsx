@@ -82,8 +82,8 @@ const contactLinks = [
   },
   {
     label: "LinkedIn",
-    value: "osama1malik",
-    href: "https://www.linkedin.com/in/osama1malik/",
+    value: "osamamumtaz01",
+    href: "https://www.linkedin.com/in/osamamumtaz01/",
     icon: FaLinkedin,
   },
   {

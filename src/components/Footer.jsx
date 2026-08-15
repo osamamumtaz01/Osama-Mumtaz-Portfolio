@@ -4,17 +4,17 @@ import { FaInstagram, FaLinkedin } from "react-icons/fa6";
 
 const socialLinks = [
   {
-    href: "https://www.instagram.com/osama.1.malik/",
+    href: "https://www.instagram.com/osamamumtaz01/",
     icon: FaInstagram,
     label: "Instagram",
   },
   {
-    href: "https://www.facebook.com/osama.1.malik/",
+    href: "https://www.facebook.com/osamamumtaz01/",
     icon: FaFacebookSquare,
     label: "Facebook",
   },
   {
-    href: "https://www.linkedin.com/in/osama1malik/",
+    href: "https://www.linkedin.com/in/osamamumtaz01/",
     icon: FaLinkedin,
     label: "LinkedIn",
   },
