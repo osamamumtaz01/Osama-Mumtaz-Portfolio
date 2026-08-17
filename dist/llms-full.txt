@@ -73,6 +73,27 @@ BS Software Engineering, COMSATS University Islamabad (2016 - 2020).
 
 ## Projects
 
+### CapDownloader - CapCut Video Downloader (Web)
+https://capdownloader.com/
+A free web tool for saving CapCut videos without the watermark. Paste a CapCut
+URL and get a clean HD file back as MP4 or MP3, with no software to install and
+no account. Processing is instant, downloads are unlimited and nothing is
+retained server-side. The site also serves as a reference on CapCut itself, with
+a "What is CapCut?" explainer covering editing, templates, effects, captions and
+audio, plus an FAQ, a privacy page, multi-language support and light and dark
+themes.
+
+### Noor e Hunar - Custom Couture Brand Site (Web)
+https://noorehunar.vercel.app/
+A brand site for a made-to-order Pakistani couture label. Luxury formals and
+pret are recreated by hand and stitched to the customer's measurements at a
+fraction of the designer price; the customer sends a photo and the studio
+handles everything from sketch to doorstep. The site leads with a portfolio of
+real client pieces from Instagram, explains the ordering process, and backs it
+with a wall of genuine DM and WhatsApp messages rather than typed-up quotes.
+Orders run through Instagram DM, with a free sketch and quote as the entry
+point.
+
 ### Turbo Shield VPN - Fast & Secure VPN (Android)
 https://play.google.com/store/apps/details?id=com.turboshieldvpn.fastsecure.vpn
 An Android VPN client built around leak protection and transparency rather than

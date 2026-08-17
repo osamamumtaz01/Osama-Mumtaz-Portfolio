@@ -12,6 +12,8 @@ import {
   sssxdown,
   reelstomp4,
   turboshieldvpn,
+  capdownloader,
+  noorehunar,
   mysql,
   figma,
   git,
@@ -383,6 +385,58 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+    name: "CapDownloader - CapCut Video Downloader",
+    category: "web",
+    description:
+      "A free web tool for saving CapCut videos without the watermark — paste a CapCut URL and get a clean HD file back, as MP4 or MP3, with no software to install and no account. Processing is instant, downloads are unlimited, and nothing is retained server-side. Beyond the downloader the site doubles as a reference on CapCut itself, with a \"What is CapCut?\" explainer covering editing, templates, effects, captions and audio, plus an FAQ, privacy page and multi-language support across light and dark themes.",
+    tags: [
+      {
+        name: "web-app",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "capcut",
+        color: "green-text-gradient",
+      },
+      {
+        name: "video-downloader",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "no-watermark",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: capdownloader,
+    source_code_link: "https://capdownloader.com/",
+  },
+  {
+    name: "Noor e Hunar - Custom Couture Brand Site",
+    category: "web",
+    description:
+      "A brand site for a made-to-order Pakistani couture label: luxury formals and pret recreated by hand and stitched to a customer's measurements at a fraction of the designer price. Send a photo and the studio handles everything from sketch to doorstep. The site leads with a portfolio of real client pieces pulled from Instagram, walks through the ordering process, and backs it with a Client Love wall of actual DM and WhatsApp messages rather than typed-up quotes. Orders run through Instagram DM, with a free sketch and quote as the entry point.",
+    tags: [
+      {
+        name: "brand-site",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "fashion",
+        color: "green-text-gradient",
+      },
+      {
+        name: "portfolio",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "made-to-order",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: noorehunar,
+    source_code_link: "https://noorehunar.vercel.app/",
+  },
   {
     name: "Turbo Shield VPN - Fast & Secure VPN",
     category: "mobile",
