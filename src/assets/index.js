@@ -17,6 +17,7 @@ import reelstomp4 from "./reelstomp4.webp";
 import turboshieldvpn from "./turboshieldvpn.webp";
 import capdownloader from "./capdownloader.webp";
 import noorehunar from "./noorehunar.webp";
+import thesugarrepublic from "./thesugarrepublic.webp";
 import mysql from "./tech/mysql.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
@@ -53,6 +54,7 @@ export {
   turboshieldvpn,
   capdownloader,
   noorehunar,
+  thesugarrepublic,
   mysql,
   firstTestimonial,
   secondTestimonial,

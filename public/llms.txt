@@ -28,6 +28,7 @@ Play Store growth and monetisation.
 
 ## Projects
 
+- [Sugar Republic](https://thesugarrepublic.com/): WooCommerce storefront for a Pakistani womenswear label selling embroidered silk suits and kaftans, with ready-to-wear, unstitched and kaftan catalogues, wishlist, accounts and nationwide cash on delivery.
 - [CapDownloader](https://capdownloader.com/): Free web tool for saving CapCut videos without the watermark, as MP4 or MP3 in HD, with no software install and no account.
 - [Noor e Hunar](https://noorehunar.vercel.app/): Brand site for a made-to-order Pakistani couture label: designer looks recreated by hand and stitched to measurement, ordered through Instagram DM.
 - [Turbo Shield VPN](https://play.google.com/store/apps/details?id=com.turboshieldvpn.fastsecure.vpn): Android VPN client with kill switch, IPv6 leak blocking, split tunnelling, Cloudflare DNS, smart server selection and per-session bandwidth recaps.

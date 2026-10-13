@@ -14,6 +14,7 @@ import {
   turboshieldvpn,
   capdownloader,
   noorehunar,
+  thesugarrepublic,
   mysql,
   figma,
   git,
@@ -385,6 +386,32 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+    name: "Sugar Republic - Embroidered Silk Suits & Kaftans",
+    category: "web",
+    description:
+      "An online store for a Pakistani womenswear label selling embroidered silk suits and kaftans. Built on WordPress and WooCommerce, it carries ready-to-wear two and three piece suits, unstitched fabric and kaftans across a filterable catalogue, with multi-variant product pages, wishlist and quick view, customer accounts, and a full cart and checkout. Shipping is free on advance payment with cash on delivery available nationwide, and a WhatsApp button sits alongside the usual storefront pages \u2014 size guide, composition and care, FAQs, returns and privacy.",
+    tags: [
+      {
+        name: "e-commerce",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "woocommerce",
+        color: "green-text-gradient",
+      },
+      {
+        name: "wordpress",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "fashion",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: thesugarrepublic,
+    source_code_link: "https://thesugarrepublic.com/",
+  },
   {
     name: "CapDownloader - CapCut Video Downloader",
     category: "web",

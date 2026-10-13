@@ -73,6 +73,17 @@ BS Software Engineering, COMSATS University Islamabad (2016 - 2020).
 
 ## Projects
 
+### Sugar Republic - Embroidered Silk Suits & Kaftans (Web)
+https://thesugarrepublic.com/
+An online store for a Pakistani womenswear label selling embroidered silk suits
+and kaftans. Built on WordPress and WooCommerce, it carries ready-to-wear two
+and three piece suits, unstitched fabric and kaftans across a filterable
+catalogue, with multi-variant product pages, wishlist and quick view, customer
+accounts, and a full cart and checkout. Shipping is free on advance payment
+with cash on delivery available nationwide, and a WhatsApp button sits
+alongside the usual storefront pages: size guide, composition and care, FAQs,
+returns and privacy. Technologies: WordPress, WooCommerce, PHP.
+
 ### CapDownloader - CapCut Video Downloader (Web)
 https://capdownloader.com/
 A free web tool for saving CapCut videos without the watermark. Paste a CapCut
