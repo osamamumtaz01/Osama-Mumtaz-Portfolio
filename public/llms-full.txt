@@ -73,6 +73,17 @@ BS Software Engineering, COMSATS University Islamabad (2016 - 2020).
 
 ## Projects
 
+### Cloud Storage Backup Drive - Backup, Sync & Restore (Android)
+https://play.google.com/store/apps/details?id=com.storage.cloudbackup.drive
+An Android backup client for keeping photos, videos, documents and audio safe
+in the cloud. Files are browsed and selected on the device, backed up to cloud
+storage and restored on demand, with automatic backup options so chosen content
+keeps syncing without picking files again each time. Sign-in runs through
+Google so a backup follows the user to a new phone, storage access is requested
+up front with the reason spelled out, and the interface is localised into a
+long list of languages. Technologies: Android, cloud backup, sync,
+Google sign-in.
+
 ### Sugar Republic - Embroidered Silk Suits & Kaftans (Web)
 https://thesugarrepublic.com/
 An online store for a Pakistani womenswear label selling embroidered silk suits

@@ -15,6 +15,7 @@ import {
   capdownloader,
   noorehunar,
   thesugarrepublic,
+  cloudbackup,
   mysql,
   figma,
   git,
@@ -386,6 +387,33 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+    name: "Cloud Storage Backup Drive - Backup, Sync & Restore",
+    category: "mobile",
+    description:
+      "An Android backup client for keeping photos, videos, documents and audio safe in the cloud. Files are browsed and selected on the device, backed up to cloud storage and restored on demand, with automatic backup options so chosen content keeps syncing without picking files again each time. Sign-in runs through Google so a backup follows the user to a new phone, storage access is requested up front with the reason spelled out, and the interface is localised into a long list of languages.",
+    tags: [
+      {
+        name: "android",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "cloud-backup",
+        color: "green-text-gradient",
+      },
+      {
+        name: "sync",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "google-sign-in",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: cloudbackup,
+    source_code_link:
+      "https://play.google.com/store/apps/details?id=com.storage.cloudbackup.drive",
+  },
   {
     name: "Sugar Republic - Embroidered Silk Suits & Kaftans",
     category: "web",
